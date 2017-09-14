@@ -9,7 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LaravelVue</title>
     <link href="{{ URL::to('/css/app.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ URL::to('/css/mui.min.css') }}" rel="stylesheet" type="text/css">
     <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <script src="{{ URL::to('/js/mui.min.js') }}"></script>
 </head>
 <body>
 <div id="app"></div>
