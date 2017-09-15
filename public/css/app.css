@@ -8,6 +8,27 @@ input {
   background-image: url(/images/download.png?0f44054c94c95dead54862d21560d5d2);
 }
 
+.container {
+  padding-top: 50px;
+}
+
+.panel-heading {
+  background-color: #007BFF !important;
+}
+
+.panel-heading a {
+  color: #fff !important;
+}
+
+.required {
+  color: #f44336;
+}
+
+.row {
+  height: 20px;
+  margin: 15px;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

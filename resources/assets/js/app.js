@@ -5,8 +5,10 @@ import Dashboard from '../components/Dashboard.vue';
 import Home from '../components/Home.vue';
 import Register from '../components/Register.vue';
 import Signin from '../components/Signin.vue';
+import VueSession from 'vue-session';
 
 Vue.use(VueRouter);
+Vue.use(VueSession);
 
 export default Vue;
 

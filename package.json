@@ -16,14 +16,15 @@
         "jquery": "^3.1.1",
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
-        "vue": "^2.1.10"
+        "vue": "^2.1.10",
+        "vue-router": "^2.7.0"
     },
     "dependencies": {
         "js-cookie": "^2.1.4",
         "muicss": "^0.9.25",
         "vue-material-components": "^0.3.4",
         "vue-resource": "^1.3.4",
-        "vue-router": "^2.7.0",
+        "vue-session": "^0.9.8",
         "vuex": "^2.3.1",
         "vuex-router-sync": "^4.2.0"
     }
