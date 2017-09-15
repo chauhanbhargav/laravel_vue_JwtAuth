@@ -1,17 +1,42 @@
 import Vue from 'vue';
-import App from './App.vue';
-import router from "./route";
 import VueRouter from 'vue-router';
-import VueResource from "vue-resource";
+import App from '../components/App.vue';
+import Dashboard from '../components/Dashboard.vue';
+import Home from '../components/Home.vue';
+import Register from '../components/Register.vue';
+import Signin from '../components/Signin.vue';
 
-Vue.config.productionTip = false;
+Vue.use(VueRouter);
 
-Vue.use(VueResource);
+export default Vue;
 
-/* eslint-disable no-new */
+export var router = new VueRouter({
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Home
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Signin
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: Register
+        },
+        {
+            path: '/dashboard',
+            name: 'dashboard',
+            component: Dashboard
+        }
+    ]
+});
+
 new Vue({
     el: '#app',
-    router,
-    template: '<App/>',
-    components: {App}
+    router: router,
+    render: app => app(App)
 });

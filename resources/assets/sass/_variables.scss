@@ -1,4 +1,3 @@
-
 // Body
 $body-bg: #f5f8fa;
 
@@ -37,9 +36,11 @@ $input-color-placeholder: lighten($text-color, 30%);
 // Panels
 $panel-default-heading-bg: #fff;
 
-//  Input
+//  Custom Css
 
-$input-border : solid 1px #ccc !important;
+$input-border: solid 1px #ccc !important;
+$blue: #007BFF;
+$red: #f44336;
 
 input {
   border-bottom: $input-border;
@@ -47,4 +48,20 @@ input {
 
 #backGround {
   background-image: url("../../../public/static/download.png");
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.panel-heading {
+  background-color: $blue !important;
+}
+
+.panel-heading a {
+  color: #fff !important;
+}
+
+.required {
+  color: $red;
 }
